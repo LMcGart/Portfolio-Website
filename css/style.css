@@ -173,6 +173,12 @@ nav {
   .portfolio_blocks {
     width: 503px;
     height: 368px;
+  }
+  
+  .backpack_text,
+  .ocean_text,
+  .reach_text,
+  .about_text {
     font-size: 30px;
   }
 }
@@ -181,6 +187,12 @@ nav {
   .portfolio_blocks {
     width: 665px;
     height: 487px;
+  }
+  
+  .backpack_text,
+  .ocean_text,
+  .reach_text,
+  .about_text {
     font-size: 30px;
   }
 }
