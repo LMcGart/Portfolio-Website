@@ -47,12 +47,18 @@ nav {
 .side_contents {
   display: flex;
   justify-content: space-between;
-  margin: 0 11px 9px 11px;
+  margin: 9px 11px 9px 11px;
 }
+
+.side_contents a {
+  font-size: 12px;
+}
+
 
 .side_contents p {
   color: #f465d5;
   font-weight: 700;
+  font-size: 12px;
 }
 
 .name {
@@ -181,6 +187,14 @@ nav {
   .about_text {
     font-size: 30px;
   }
+  
+  .side_contents a {
+    font-size: 16px;
+  }
+
+  .side_contents p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -194,5 +208,13 @@ nav {
   .reach_text,
   .about_text {
     font-size: 30px;
+  }
+  
+  .side_contents a {
+    font-size: 16px;
+  }
+
+  .side_contents p {
+    font-size: 16px;
   }
 }
