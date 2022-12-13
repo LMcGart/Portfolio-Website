@@ -148,7 +148,7 @@ nav {
   height: 100%;
   opacity: 0;
   transition: opacity 0.5s;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .backpack_text:hover,
@@ -173,6 +173,7 @@ nav {
   .portfolio_blocks {
     width: 503px;
     height: 368px;
+    font-size: 30px;
   }
 }
 
@@ -180,5 +181,6 @@ nav {
   .portfolio_blocks {
     width: 665px;
     height: 487px;
+    font-size: 30px;
   }
 }
