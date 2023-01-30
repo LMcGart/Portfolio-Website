@@ -5,6 +5,9 @@ const to_color = "#f465d5";
 const navbar = document.querySelector(".navbar");
 const home = document.querySelector(".home");
 const gallery = document.querySelector(".gallery");
+const side_p = document.querySelector(".side_contents p");
+const side_name = document.querySelector(".name");
+const last_name = document.querySelector(".last_name");
 const blocks_text = document.querySelectorAll(".blocks_text");
 const backpackDiv = document.getElementById("backpack");
 const oceanDiv = document.getElementById("ocean");
@@ -27,28 +30,40 @@ window.onload = function () {
     navbar.style.backgroundColor = from_color;
     home.style.color = "#000000";
     gallery.style.color = "#000000";
-    console.log(navbar.style.backgroundColor);
-    console.log(home.style.color);
+    side_p.style.color = "#000000";
+    side_name.style.color = "#000000";
+    last_name.style.color = "#000000";
 
     setTimeout(function () {
       navbar.style.transition = "background-color 2s";
       navbar.style.backgroundColor = to_color;
-      home.style.color = "#fff";
       home.style.transition = "color 2s";
-      console.log(home.style.color);
-      gallery.style.color = "#fff";
+      home.style.color = "#fff";
       gallery.style.transition = "color 2s";
-      console.log(navbar.style.backgroundColor);
+      gallery.style.color = "#fff";
+      side_p.style.transition = "color 2s";
+      side_p.style.color = to_color;
+      side_name.style.transition = "color 2s";
+      side_name.style.color = to_color;
+      last_name.style.transition = "color 2s";
+      last_name.style.color = to_color;
     }, 1);
   } else if (param.has("from_color")) {
     console.log(from_color);
     navbar.style.backgroundColor = from_color;
-    console.log(navbar.style.backgroundColor);
+    side_p.style.color = from_color;
+    side_name.style.color = from_color;
+    last_name.style.color = from_color;
 
     setTimeout(function () {
       navbar.style.transition = "background-color 2s";
       navbar.style.backgroundColor = to_color;
-      console.log(navbar.style.backgroundColor);
+      side_p.style.transition = "color 2s";
+      side_p.style.color = to_color;
+      side_name.style.transition = "color 2s";
+      side_name.style.color = to_color;
+      last_name.style.transition = "color 2s";
+      last_name.style.color = to_color;
     }, 1);
   } else {
     navbar.style.backgroundColor = to_color;

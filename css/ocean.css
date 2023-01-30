@@ -48,18 +48,18 @@ nav {
 }
 
 .side_contents p {
-  color: #001aff;
+  color: #f465d5;
   font-weight: 700;
 }
 
 .name {
   font-weight: 700;
-  color: #001aff;
+  color: #f465d5;
 }
 
 .last_name {
   font-weight: 400;
-  color: #001aff;
+  color: #f465d5;
 }
 
 /* Main Content Styling */
@@ -74,6 +74,30 @@ nav {
   width: 75px;
   background-color: #001aff;
   border-radius: 50%;
+}
+
+.message_heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.message_heading p {
+  color: #001aff;
+  text-align: center;
+}
+
+.heading {
+  font-size: 5vh;
+  font-weight: 700;
+}
+
+.contents {
+  font-size: 2.5vh;
+  font-weight: 400;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 992px) {

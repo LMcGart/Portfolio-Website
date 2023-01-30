@@ -53,18 +53,18 @@ nav {
 }
 
 .side_contents p {
-  color: #f21111;
+  color: #f465d5;
   font-weight: 700;
 }
 
 .name {
   font-weight: 700;
-  color: #f21111;
+  color: #f465d5;
 }
 
 .last_name {
   font-weight: 400;
-  color: #f21111;
+  color: #f465d5;
 }
 
 /* Main Content Styling */
@@ -81,7 +81,31 @@ nav {
   border-radius: 50%;
 }
 
-.content_holder {
+.message_heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.message_heading p {
+  color: #f21111;
+  text-align: center;
+}
+
+.heading {
+  font-size: 5vh;
+  font-weight: 700;
+}
+
+.contents {
+  font-size: 2.5vh;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/* .content_holder {
   margin: 40px 75px 125px 75px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -106,7 +130,7 @@ p {
 
 .content_holder h1 {
   padding: 29px 0px;
-}
+} */
 
 @media screen and (max-width: 992px) {
 }
