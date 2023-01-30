@@ -1,0 +1,89 @@
+/* General Styling + Skip Link */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Bottom Nav Styling */
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  width: 245px;
+  border-radius: 25px;
+  background-color: #f465d5;
+  justify-content: space-evenly;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.side_contents {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px 20px 20px;
+  font-size: 18px;
+}
+
+.side_contents p {
+  color: #000000;
+  font-weight: 700;
+}
+
+.name {
+  font-weight: 700;
+  color: #000000;
+}
+
+.last_name {
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Main Content Styling */
+.circle_holder {
+  padding: 40px 0px 14px 0px;
+}
+
+.circle {
+  display: table;
+  margin: auto;
+  height: 75px;
+  width: 75px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 600px) {
+  .side_contents a {
+    font-size: 12px;
+  }
+
+  .side_contents p {
+    font-size: 12px;
+  }
+}
