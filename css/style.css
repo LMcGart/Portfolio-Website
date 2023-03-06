@@ -76,8 +76,11 @@ nav {
 }
 
 .portfolio_blocks {
-  width: 665px;
-  height: 487px;
+  /* width: 665px;
+  height: 487px; */
+  /* width: 10rem; */
+  width: 79vh;
+  height: 58vh;
   font-weight: 700;
   display: grid;
   grid-template-columns: repeat(50, 1fr);
