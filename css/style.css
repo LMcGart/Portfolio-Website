@@ -143,7 +143,8 @@ nav {
   font-size: 30px;
 }
 
-.blocks_text:hover {
+.blocks_text:hover,
+.blocks_text:focus {
   text-align: center;
   opacity: 1;
 }
