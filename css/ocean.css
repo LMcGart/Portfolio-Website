@@ -9,7 +9,7 @@ html {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  color: #ffffff;
+  color: #001aff;
   text-decoration: none;
 }
 
@@ -40,6 +40,10 @@ nav {
   font-size: 20px;
 }
 
+.navbar a {
+  color: #fff;
+}
+
 .side_contents {
   display: flex;
   justify-content: space-between;
@@ -63,17 +67,21 @@ nav {
 }
 
 /* Main Content Styling */
-.circle_holder {
-  padding: 40px 0px 14px 0px;
+.hidden_message {
+  display: none;
 }
 
-.circle {
-  display: table;
-  margin: auto;
-  height: 75px;
-  width: 75px;
-  background-color: #001aff;
-  border-radius: 50%;
+.page_title {
+  text-align: center;
+}
+.title {
+  padding: 45px 0px 25px 0px;
+  font-size: 4vh;
+}
+
+.timeline {
+  font-style: italic;
+  font-size: 2vh;
 }
 
 .message_heading {
@@ -82,25 +90,46 @@ nav {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-}
-
-.message_heading p {
-  color: #001aff;
   text-align: center;
 }
 
 .heading {
-  font-size: 5vh;
+  font-size: 3vh;
   font-weight: 700;
 }
 
 .contents {
-  font-size: 2.5vh;
+  text-align: center;
+  width: 70vw;
+  font-size: 1.2vw;
   font-weight: 400;
   margin-top: 20px;
+  line-height: 1.5vw;
+  padding: 15px;
+  border: #001aff 5px solid;
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 992px) {
+  main {
+    display: none;
+  }
+
+  .hidden_message {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hidden_message p {
+    /* color: #001aff; */
+    font-size: 3.5vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -110,5 +139,39 @@ nav {
 
   .side_contents p {
     font-size: 12px;
+  }
+
+  .message_heading {
+    position: absolute;
+    top: 575px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  .contents {
+    width: 90vw;
+    font-size: 2vh;
+    line-height: 2vh;
+  }
+
+  main {
+    display: none;
+  }
+
+  .hidden_message {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hidden_message p {
+    /* color: #001aff; */
+    font-size: 3.5vh;
   }
 }
