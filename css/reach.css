@@ -86,13 +86,20 @@ nav {
   font-size: 2vh;
 }
 
-.message_heading {
+/* .message_heading {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
+} */
+
+.message_heading {
+  display: flex;
+  flex-direction: column;
+  margin: 8vh auto 0 auto;
+  align-items: center;
 }
 
 .message_heading p,
@@ -116,6 +123,10 @@ nav {
   padding: 15px;
   border: #000 5px solid;
   border-radius: 30px;
+}
+
+.main_content div:last-child {
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 992px) {

@@ -43,6 +43,7 @@ nav {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
+  z-index: 9999;
 }
 
 .navbar a {
@@ -144,9 +145,16 @@ h2 {
 .images_holder {
   display: grid;
   align-items: center;
+  justify-items: center;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
   margin: 75px 30px 15px 30px;
+}
+
+.differentiator {
+  font-size: 2vh;
+  color: #000;
+  margin-bottom: 5px;
 }
 
 .images_holder:first-of-type {
