@@ -117,7 +117,10 @@ h2 {
 } */
 
 .intro_pic_container {
-  margin: 5vh auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4vh auto 0 auto;
   max-width: 50vw;
   border-radius: 20px;
   /* align-items: center; */
@@ -144,7 +147,6 @@ h2 {
 
 .images_holder {
   display: grid;
-  align-items: center;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
