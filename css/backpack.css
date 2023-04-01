@@ -43,6 +43,7 @@ nav {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
+  z-index: 9999;
 }
 
 .navbar a {
@@ -77,6 +78,9 @@ nav {
 }
 
 .page_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -86,11 +90,19 @@ h2 {
 }
 
 .title {
-  padding: 45px 0px 25px 0px;
+  margin: 45px 0px 15px 0px;
   font-size: 4vh;
 }
 
+.title_description {
+  max-width: 28vw;
+  font-style: italic;
+  font-size: 2vh;
+  font-weight: 400;
+}
+
 .timeline {
+  margin-top: 10px;
   font-style: italic;
   font-size: 2vh;
 }
@@ -105,7 +117,10 @@ h2 {
 } */
 
 .intro_pic_container {
-  margin: 5vh auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4vh auto 0 auto;
   max-width: 50vw;
   border-radius: 20px;
   /* align-items: center; */
@@ -132,10 +147,16 @@ h2 {
 
 .images_holder {
   display: grid;
-  align-items: center;
+  justify-items: center;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
   margin: 75px 30px 15px 30px;
+}
+
+.differentiator {
+  font-size: 2vh;
+  color: #000;
+  margin-bottom: 5px;
 }
 
 .images_holder:first-of-type {
@@ -189,6 +210,10 @@ h2 {
 }
 
 #problem_text {
+  width: 60vw;
+}
+
+#solution_text {
   width: 50vw;
 }
 

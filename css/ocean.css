@@ -9,7 +9,7 @@ html {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  color: #001aff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -72,42 +72,140 @@ nav {
 }
 
 .page_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
+
+.page_title h1,
+h2 {
+  color: #001aff;
+}
+
 .title {
   padding: 45px 0px 25px 0px;
   font-size: 4vh;
 }
 
+.title_description {
+  max-width: 28vw;
+  font-style: italic;
+  font-size: 2vh;
+  font-weight: 400;
+}
+
 .timeline {
+  margin-top: 10px;
   font-style: italic;
   font-size: 2vh;
 }
 
-.message_heading {
+/* .message_heading {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
+} */
+
+.intro_pic_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8vh auto 0 auto;
+  max-width: 50vw;
+  border-radius: 20px;
+  text-align: center;
 }
 
-.heading {
+.intro_pic_container img {
+  width: 100%;
+  border-radius: 0px;
+  border: #001aff 5px solid;
+  border-radius: 15px;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  /* width: 70vw; */
+  margin-bottom: 45px;
+}
+
+.images_holder {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  margin: 75px 30px 15px 30px;
+}
+
+.images_holder:first-of-type {
+  margin-top: 20px;
+}
+
+.images_holder img {
+  width: 100%;
+  border: #000 5px solid;
+  border-radius: 15px;
+}
+
+#tall img {
+  width: 35vw;
+}
+
+#grid_text {
+  margin: auto;
+  margin-top: 0px !important;
+}
+
+.main_content div:last-child {
+  margin-bottom: 140px;
+}
+
+#proj {
+  margin-top: 26vh;
+  margin-bottom: 45px;
+}
+
+#conclusion {
+  margin-top: 45px;
+}
+
+.section_headings {
   font-size: 3vh;
   font-weight: 700;
+  text-align: center;
 }
 
 .contents {
-  text-align: center;
+  text-align: left;
   width: 70vw;
-  font-size: 1.2vw;
+  font-size: 1.075vw;
   font-weight: 400;
   margin-top: 20px;
-  line-height: 1.5vw;
+  line-height: 1.4vw;
   padding: 15px;
-  border: #001aff 5px solid;
+  border: #000 5px solid;
   border-radius: 30px;
+}
+
+#proj_text {
+  width: 70vw;
+}
+
+#problem_text {
+  width: 60vw;
+}
+
+#solution_text {
+  width: 50vw;
 }
 
 @media screen and (max-width: 992px) {
