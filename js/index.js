@@ -15,7 +15,7 @@ const reachDiv = document.getElementById("reach");
 const aboutDiv = document.getElementById("about");
 const portfolioBlocks = [backpackDiv, oceanDiv, reachDiv, aboutDiv];
 
-window.onload = function () {
+function colorChanger() {
   window.history.replaceState({}, "", "/index.html");
 
   setTimeout(function () {
@@ -68,7 +68,8 @@ window.onload = function () {
   } else {
     navbar.style.backgroundColor = to_color;
   }
-};
+}
+colorChanger();
 
 function blockMouseOver(elem) {
   portfolioBlocks.forEach((block) => {
