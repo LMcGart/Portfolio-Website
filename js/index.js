@@ -16,7 +16,7 @@ const aboutDiv = document.getElementById("about");
 const portfolioBlocks = [backpackDiv, oceanDiv, reachDiv, aboutDiv];
 
 function colorChanger() {
-  window.history.replaceState({}, "", "/index.html");
+  window.history.replaceState({}, "", "/");
 
   setTimeout(function () {
     blocks_text.forEach((blockText) => {
