@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f0ecf0;
 }
 
 /* Bottom Nav Styling */
@@ -43,7 +43,7 @@ nav {
 
 .home,
 .gallery {
-  color: #fff;
+  color: #f0ecf0;
 }
 
 .side_contents {
@@ -76,6 +76,12 @@ nav {
 .page_title {
   text-align: center;
 }
+
+.page_title h1,
+h2 {
+  color: #008000;
+}
+
 .title {
   padding: 45px 0px 25px 0px;
   font-size: 4vh;
@@ -116,13 +122,13 @@ nav {
 .contents {
   text-align: left;
   width: 70vw;
-  font-size: 1.2vw;
+  font-size: 1.05rem;
   font-weight: 400;
   margin-top: 20px;
-  line-height: 1.5vw;
+  line-height: 1.35rem;
   padding: 15px;
   border: #000 5px solid;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .main_content div:last-child {

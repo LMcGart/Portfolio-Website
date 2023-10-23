@@ -92,3 +92,70 @@ function blockMouseOut(elem) {
     block.style.transition = "filter 1s";
   });
 }
+
+const body = document.querySelector("body");
+const backpackText = document.getElementById("backpackTextTest");
+const oceanText = document.getElementById("oceanTextTest");
+const reachText = document.getElementById("reachTextTest");
+const aboutText = document.getElementById("aboutTextTest");
+const textBlocks = [backpackText, oceanText, reachText, aboutText];
+
+function textBackgroundChanger() {
+  let textColor = "";
+  textBlocks.forEach((textBlock) => {
+    textBlock.style.transition = "color 1s";
+    body.style.transition = "background-color 1s";
+    textBlock.addEventListener("mouseover", () => {
+      let computedStyle = window.getComputedStyle(textBlock);
+      textColor = computedStyle.color;
+      textBlock.style.color = "#f0ecf0";
+      body.style.backgroundColor = textColor;
+      console.log(textColor);
+    });
+    textBlock.addEventListener("mouseout", () => {
+      textBlock.style.color = textColor;
+      body.style.backgroundColor = "#f0ecf0";
+    });
+  });
+}
+
+// textBackgroundChanger();
+
+// function textMouseOver(elem) {
+//   let textColor = "";
+//   textBlocks.forEach((textBlock) => {
+//     let computedStyle = window.getComputedStyle(elem);
+//     textColor = computedStyle.color;
+//     textBlock.style.color = "transparent";
+//     elem.style.color = "#f0ecf0";
+//     body.style.backgroundColor = textColor;
+//     console.log(textColor);
+//   });
+// }
+
+// function textMouseOut(elem) {
+//   textBlocks.forEach((textBlock) => {
+//     // elem.style.color = textColor;
+//     body.style.backgroundColor = "#f0ecf0";
+//   });
+// }
+
+// function textMouseOver(elem) {
+//   textBlocks.forEach((textBlock) => {
+//   let textColor = textBlock.style.color;
+//   console.log(textColor);
+//   elem.style.transition = "color 2s";
+//   textBlock.style.transition = "color 2s";
+//   textBlock.style.color = "transparent";
+//   elem.style.color = "#000000";
+//   body.style.transition = "background-color 2s";
+//   body.style.backgroundColor = textColor;
+//   });
+// }
+
+// function textMouseOut(elem) {
+//   let textColor = elem.style.color;
+//   elem.style.transition = "color 2s";
+//   elem.style.color = textColor;
+//   body.style.backgroundColor = "#f0ecf0";
+// }

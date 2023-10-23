@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f0ecf0;
 }
 
 /* Bottom Nav Styling */
@@ -41,7 +41,7 @@ nav {
 }
 
 .navbar a {
-  color: #fff;
+  color: #f0ecf0;
 }
 
 .side_contents {
@@ -116,13 +116,13 @@ h2 {
   align-items: center;
   margin: 8vh auto 0 auto;
   max-width: 50vw;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   text-align: center;
 }
 
 .intro_pic_container img {
   width: 100%;
-  border-radius: 0px;
+  /* border-radius: 0px; */
   border: #001aff 5px solid;
   border-radius: 15px;
 }
@@ -187,13 +187,13 @@ h2 {
 .contents {
   text-align: left;
   width: 70vw;
-  font-size: 1.075vw;
+  font-size: 1.05rem;
   font-weight: 400;
   margin-top: 20px;
-  line-height: 1.4vw;
+  line-height: 1.35rem;
   padding: 15px;
   border: #000 5px solid;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 #proj_text {
@@ -201,11 +201,11 @@ h2 {
 }
 
 #problem_text {
-  width: 60vw;
+  width: 70vw;
 }
 
 #solution_text {
-  width: 50vw;
+  width: 70vw;
 }
 
 @media screen and (max-width: 992px) {

@@ -9,12 +9,13 @@ html {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  color: #ffffff;
+  color: #f0ecf0;
   text-decoration: none;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f0ecf0;
+  /* transition: background-color 1s; */
 }
 
 /* Bottom Nav Styling */
@@ -73,6 +74,35 @@ nav {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.portfolio_text {
+  font-size: 36px;
+  font-weight: bold;
+  /* width: 79vh; */
+}
+
+.text {
+  margin-top: 20px;
+  /* transition: color 1s; */
+}
+
+#backpackTextTest {
+  color: #f21111;
+}
+
+#oceanTextTest {
+  color: #001aff;
+}
+
+#reachTextTest {
+  color: #008000;
+}
+
+#aboutTextTest {
+  color: #000000;
 }
 
 .portfolio_blocks {
@@ -101,7 +131,7 @@ nav {
 }
 
 #reach {
-  background: #feff00;
+  background: #008000;
   grid-area: 18 / 9 / 51 /41;
   z-index: 2;
 }
@@ -139,7 +169,6 @@ nav {
   width: 100%;
   height: 100%;
   opacity: 0;
-  /* transition: opacity 0.5s; */
   font-size: 30px;
 }
 

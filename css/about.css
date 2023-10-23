@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f0ecf0;
 }
 
 /* Bottom Nav Styling */
@@ -41,7 +41,7 @@ nav {
 }
 
 .navbar a {
-  color: #fff;
+  color: #f0ecf0;
 }
 
 .side_contents {
@@ -120,20 +120,22 @@ nav {
 
 .contents img {
   width: 35vh;
-  border-radius: 30px;
+  border: #000 5px solid;
+
+  border-radius: 15px;
 }
 
 .about_me_message {
   position: relative;
   text-align: left;
   width: 70vw;
-  font-size: 1.2vw;
+  font-size: 1.05rem;
   font-weight: 400;
   margin-top: 20px;
-  line-height: 1.5vw;
+  line-height: 1.35rem;
   padding: 15px;
   border: #000 5px solid;
-  border-radius: 30px;
+  border-radius: 15px;
   z-index: -1;
 }
 

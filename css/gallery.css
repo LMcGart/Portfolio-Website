@@ -9,12 +9,12 @@ html {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  color: #ffffff;
+  color: #f0ecf0;
   text-decoration: none;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f0ecf0;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
