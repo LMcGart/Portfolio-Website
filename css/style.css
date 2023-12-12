@@ -89,6 +89,10 @@ nav {
   /* transition: color 1s; */
 }
 
+#noaaTextTest {
+  color: #643b9f;
+}
+
 #backpackTextTest {
   color: #f21111;
 }
